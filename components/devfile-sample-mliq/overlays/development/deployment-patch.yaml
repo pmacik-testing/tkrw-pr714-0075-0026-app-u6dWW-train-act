@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-mliq
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0026-tenant/tkrw-pr714-0075-0026-app/devfile-sample-mliq@sha256:0b820fee6208e807f8b0579b85350eae3f4399bdc1522e236d7aebbfa601393a
+        name: my-nodejs
+        resources: {}
+status: {}
